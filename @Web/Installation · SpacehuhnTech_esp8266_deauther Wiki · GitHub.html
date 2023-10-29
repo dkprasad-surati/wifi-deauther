@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation -->
+<html lang="en" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark" data-a11y-animated-images="system"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  <link rel="dns-prefetch" href="https://github.githubassets.com/">
+  <link rel="dns-prefetch" href="https://avatars.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+  <link rel="preconnect" href="https://github.githubassets.com/" crossorigin="">
+  <link rel="preconnect" href="https://avatars.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-ksfTgQOOnE+FFXf+yNfVjKSlEckJAdufFIYGK7ZjRhWcZgzAGcmZqqArTgMLpu90FwthqcCX4ldDgKXbmVMeuQ==" rel="stylesheet" href="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/light-92c7d381038e.css"><link crossorigin="anonymous" media="all" integrity="sha512-1KkMNn8M/al/dtzBLupRwkIOgnA9MWkm8oxS+solP87jByEvY/g4BmoxLihRogKcX1obPnf4Yp7dI0ZTWO+ljg==" rel="stylesheet" href="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/dark-d4a90c367f0c.css"><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" integrity="sha512-cZa7DZqvMBwD236uzEunO/G1dvw8/QftyT2UtLWKQFEy0z0eq0R5WPwqVME+3NSZG1YaLJAaIqtU+m0zWf/6SQ==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-7196bb0d9aaf.css"><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-WVoKqJ4y1nLsdNH4RkRT5qrM9+n9RFe1RHSiTnQkBf5TSZkJEc9GpLpTIS7T15EQaUQBJ8BwmKvwFPVqfpTEIQ==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-595a0aa89e32.css"><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" integrity="sha512-XpAMBMSRZ6RTXgepS8LjKiOeNK3BilRbv8qEiA/M3m+Q4GoqxtHedOI5BAZRikCzfBL4KWYvVzYZSZ8Gp/UnUg==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-5e900c04c491.css"><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" integrity="sha512-3HF2HZ4LgEIQm77yOzoeR20CX1n2cUQlcywscqF4s+5iplolajiHV7E5ranBwkX65jN9TNciHEVSYebQ+8xxEw==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-dc71761d9e0b.css"><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-+J8j3T0kbK9/sL3zbkCfPtgYcRD4qQfRbT6xnfOrOTjvz4zhr0M7AXPuE642PpaxGhHs1t77cTtieW9hI2K6Gw==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-f89f23dd3d24.css"><link data-color-theme="light_tritanopia" crossorigin="anonymous" media="all" integrity="sha512-AQeAx5wHQAXNf0DmkvVlHYwA3f6BkxunWTI0GGaRN57GqD+H9tW8RKIKlopLS0qGaC54seFsPc601GDlqIuuHg==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia-010780c79c07.css"><link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all" integrity="sha512-+u5pmgAE0T03d/yI6Ha0NWwz6Pk0W6S6WEfIt8veDVdK8NTjcMbZmQB9XUCkDlrBoAKkABva8HuGJ+SzEpV1Uw==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia-faee699a0004.css">
+  
+    <link crossorigin="anonymous" media="all" integrity="sha512-EAhBCLIJ/pXHG3Y6yQhs9s53SHV80sjJ+yCwlQtfv7LaVkD+VoEuZBZ5betQJFUNj/5qBSfZk5GFtazEDzWLAg==" rel="stylesheet" href="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/primer-10084108b209.css">
+    <link crossorigin="anonymous" media="all" integrity="sha512-dY4wwyr78uNw1RfuECz9A1WxIntZSeWFvBpuKvNg3dkWuZLVcFDiJexuIPXGVWda6hwfA3JDv+Q1b/VU0q6W/Q==" rel="stylesheet" href="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/global-758e30c32afb.css">
+    <link crossorigin="anonymous" media="all" integrity="sha512-qaQSuqZq+oABMjeq50pjkOFNFQgXaX48YWILJaccJMpAVbBFZLtpwuEwy152RdI/8TmYFVn/xyIGc2aG/f2lAQ==" rel="stylesheet" href="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/github-a9a412baa66a.css">
+  <link crossorigin="anonymous" media="all" integrity="sha512-tytt4iUhosNvB/h0dpKyAiJgbmbwabQ1UeHGFw9NONEOpSAOkfLdjFRP2h5FwQNTnq6OrNo5mPNRxPlfzYXosw==" rel="stylesheet" href="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/wiki-b72b6de22521.css">
+
+
+
+  <script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-hj5vcZSAbXtEYbiVN8LEvHGUdEOErKuZa1HZ4J1v7X4Ckx0ZY5sRVBNjpwhF2XQxg53eFTTXPNDVYbE5zzB1Rg==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/runtime-863e6f719480.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-XKV1seh7UvAY3d4/PUvi5uHqcCJ9ThVg73aqJM9r8QFid4KRpTHbebXZdhznn39F6fvGFcgvAhTdTrUp/oWL1A==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/environment-5ca575b1e87b.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-io+1MvgXPXTw8Kp4eOdNMJl8uGASuw8VfTY5VeIFETaAknimWi8GoxggMEeQ6mq0de4Dest4iIJ/9gUbCo0hgw==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_selector-observer_dist_index_esm_js-8a8fb532f817.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-Es25N4GyPa8Yfp5wpahoe5b2fyPtkRMyR6mKIXyCJC0ocqQazeWvxhGZhx3StRxOfqDfHDR5SS35u/R3Wux6Cg==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_details-dialog-elemen-63debe-12cdb93781b2.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-lmiecOIgf+hakg5oKMNM7grVhEDyPoIrT39Px448JJH5PSAaK21PH0Twgyz5O5oi8+dnlLr3Jt8bBCtAcpNdRw==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_remote-inp-c7e9ed-96689e70e220.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-y67eNkVaNK4RguUGcHOvIbHFlgf1Qje+LDdjVw2eFuuvBOqta2GePz/CwoLIR/PJhhRAj5RPGxCWoomnimSw6w==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_github_catalyst_lib_index_js-node_modules_github_time-elements_dist_index_js-cbaede36455a.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-DE9GK/TS3Hf/dJfP1GMiyjvsGRnpR4A1eGH64s0Ot7Vy7Tj7/aD1d5EOMWHFWQXlXy/ZSwu5MHInG6RZN31bMA==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_primer_view-co-52e104-0c4f462bf4d2.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-l//8hwOiwPAmBg0NwsWUYovdQ7/r9kPHiD9/LL4fD3M7El8gbgaOYU5+o6cYLB6puSfOTxyN9M6fE38HSDr2Bw==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/github-elements-97fffc8703a2.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-VGQBVbjxd8Rb9SQHarYYzLxo5v+23kLlaGiGgKAcbhpfN0VGzZaea8YWYmD4E6zRBwAqLlqXSCSG5WAeDy9zlQ==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/element-registry-54640155b8f1.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-uo73yUZcm4EicwjSbfxFZcKfjWniOxhLBp+q1n7IFRfutFM6/lzbQMgD0Xrxp7QD1HzqdvrV8UclPhi3mEOyzQ==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_lit-html_lit-html_js-ba8ef7c9465c.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-LWSGAMIPWi+15W2gBjmxbtVqU0DamkrNOQylAjPL8509iKnuWgSLdjylDv3WWm/9p6h2U/D//3i6BiiGFZPXJA==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_github_remote-form_dist_index_js-node_modules_github_catalyst_lib_index_-87b1b3-2d648600c20f.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-0r1nf/rfPz54kyePp4f63bcPxkFo7wyaUZJD/SwIVDK3q0WzurAK9ydOm88tzKtPJm8xWI0Vo25NyCfecwxJ9g==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_github_hotkey_dist_index-9f48bd-d2bd677ffadf.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-VK56d0N1hPZ20mOzPoy84zlTGCjGbKKmVvfjoyDqSF+VxTD4f6X8QDs2RgG1R1cdBmsCiea+ZxP6ukV3tHlD+Q==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_github_paste-markdown_dist_index_esm_js-node_modules_github_quote-select-df2537-54ae7a774375.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-vneJnOQi1L9PJESlqC6veCutbVwyQDQCzMoPlkEhfWJ592tNYva9p1SV5uTde09VMWh17HFMDbfuVoy0I5tqHA==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/app_assets_modules_github_behaviors_pjax_ts-be77899ce422.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-2hsYB2KHyayxUJJxJGhXeTeTZZG2c7lzRtO0uB1txmpc7rfvIt4mf0iossT0MHIHknYlaslgi98jmmlVXcXaZQ==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/app_assets_modules_github_behaviors_keyboard-shortcuts-helper_ts-app_assets_modules_github_be-af52ef-da1b18076287.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-8eyyuvsdeUUBrkTsu7OePie4HdGA6yQww2w70dhs28WU0cMh5qhDM1vHrLOwJdbFQodch4KNQ1rv6KNyw1XMpA==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/app_assets_modules_github_behaviors_details_ts-app_assets_modules_github_behaviors_include-fr-a5a4c7-f1ecb2bafb1d.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-yOhuKUrmfc2z/h+ayV/iHNpnRPqWFoDy3rTErO//BW4zH7lCvm0bTbDZNTO/plVsBTp5bUcfQzigNEll7H7WhQ==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/behaviors-c8e86e294ae6.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-aiFnNLzdbU+rTnk22egRpG0tUysMfcjjNyuJkQ9elpZHTu7kLkVyq1J9/w4Zb2Ztgx2UFuKIRDHTDur6zdva7g==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js-01c6c52-6a216734bcdd.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-wa0tbmpYPl6TMJ2WW6WS6lRWUFXZxe+Ki+c7eZRUWfuVxFgJGL1Agr/Fi4CIu+D/URNSAiHyX0xI8Ijyl06oRw==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/notifications-global-c1ad2d6e6a58.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-yG3t7Lpt5yKkdMNXFpl75Xemm+g4ghZ5e8xRBwl/HMbmgc3htVvxrjbohbK9MMfnnci1SnogZNH9DhJHYdQf3A==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_virtualized-list_es_index_js-node_modules_github_template-parts_lib_index_js-c86dedecba6d.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-PZx2ECbEOLyNjLqDpFJVzdfRl4iXDAct8DDxJoT9Iil5OqSo7m8dXuy5uX5LavIwnsVb/poLucnjk67WyZAMJQ==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/vendors-node_modules_github_mini-throttle_dist_decorators_js-node_modules_github_remote-form_-2c55be-3d9c761026c4.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-2IO4DDKs14Xk+vMRzfe3NVcyY5Bsb071hi/LJEZcTTo74dZ9sgelYQaCPu0nh3qsny1AvzutHZyuvBmt0fbguA==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/app_assets_modules_github_diffs_blob-lines_ts-app_assets_modules_github_diffs_linkable-line-n-f314c3-d883b80c32ac.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-dAabCMULUfibZDcNGDpWbINNJawdJeCfhl8ZTGFEYvgpblXXQIBlutl5zv0oOqc0p1ginRnWy4mAZES/swKmZA==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/app_assets_modules_github_fetch_ts-app_assets_modules_github_input-demux_ts-app_assets_module-e5b55c-74069b08c50b.js.download"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-9b6aISppMLr5F8Imzz33ChOeks/lElt5UEQ1fHaKruZEmJ/Jf2bZ8A96OL0fPGqhReDoWK5CZec/Btp1ny7+oQ==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/diffs-f5be9a212a69.js.download"></script>
+    <script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-bSwoJC5jJWUUUYAUZYT4XSl8e3mLX2Uxm7pbdDOLFdwHABgtnaOCGm2Er8IILEsz79SN017/KqhzKLIyLfoCOA==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/wiki-6d2c28242e63.js.download"></script>
+
+
+  <title>Installation · SpacehuhnTech/esp8266_deauther Wiki · GitHub</title>
+
+
+
+    
+
+  <meta name="request-id" content="907A:565D:9D0D42:AFC953:62AC2242" data-pjax-transient="true"><meta name="html-safe-nonce" content="c89c82e560b3df67d1f447e717ca0024fab520d54efb408c3a4ca09ffaf79185" data-pjax-transient="true"><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9TcGFjZWh1aG5UZWNoL2VzcDgyNjZfZGVhdXRoZXIiLCJyZXF1ZXN0X2lkIjoiOTA3QTo1NjVEOjlEMEQ0MjpBRkM5NTM6NjJBQzIyNDIiLCJ2aXNpdG9yX2lkIjoiMTMyNjc0Mjk3MzA3OTg0NzA4NyIsInJlZ2lvbl9lZGdlIjoiYXAtc291dGgtMSIsInJlZ2lvbl9yZW5kZXIiOiJhcC1zb3V0aC0xIn0=" data-pjax-transient="true"><meta name="visitor-hmac" content="9988f4aef0dc0020ecb222abe6618a8864e07c4386145d71b331dc68277f2981" data-pjax-transient="true">
+
+    <meta name="hovercard-subject-tag" content="repository:78281075" data-pjax-transient="">
+
+
+  <meta name="github-keyboard-shortcuts" content="repository" data-pjax-transient="true">
+  
+
+  <meta name="selected-link" value="repo_wiki" data-pjax-transient="">
+
+    <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY">
+  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+<meta name="octolytics-url" content="https://collector.github.com/github/collect">
+
+  <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/wiki/show" data-pjax-transient="true">
+
+  
+
+
+
+
+  
+
+    <meta name="user-login" content="">
+
+    <meta name="viewport" content="width=device-width">
+    
+      <meta name="description" content="Affordable WiFi hacking platform for testing and learning - Installation · SpacehuhnTech/esp8266_deauther Wiki">
+      <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <meta property="fb:app_id" content="1401488693436528">
+    <meta name="apple-itunes-app" content="app-id=1477376905">
+      <meta name="twitter:image:src" content="https://opengraph.githubassets.com/c3929e3ac1cb27741e101a2ce75da7d6ed48b17d6d13a7c434d389ff2baec73c/SpacehuhnTech/esp8266_deauther"><meta name="twitter:site" content="@github"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Installation · SpacehuhnTech/esp8266_deauther Wiki"><meta name="twitter:description" content="Affordable WiFi hacking platform for testing and learning - Installation · SpacehuhnTech/esp8266_deauther Wiki">
+      <meta property="og:image" content="https://opengraph.githubassets.com/c3929e3ac1cb27741e101a2ce75da7d6ed48b17d6d13a7c434d389ff2baec73c/SpacehuhnTech/esp8266_deauther"><meta property="og:image:alt" content="Affordable WiFi hacking platform for testing and learning - Installation · SpacehuhnTech/esp8266_deauther Wiki"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="600"><meta property="og:site_name" content="GitHub"><meta property="og:type" content="object"><meta property="og:title" content="Installation · SpacehuhnTech/esp8266_deauther Wiki"><meta property="og:url" content="https://github.com/SpacehuhnTech/esp8266_deauther"><meta property="og:description" content="Affordable WiFi hacking platform for testing and learning - Installation · SpacehuhnTech/esp8266_deauther Wiki">
+      
+    <link rel="assets" href="https://github.githubassets.com/">
+    
+
+
+        <meta name="hostname" content="github.com">
+
+
+
+        <meta name="expected-hostname" content="github.com">
+
+
+    <meta name="enabled-features" content="IMAGE_METRIC_TRACKING">
+
+
+  <meta http-equiv="x-pjax-version" content="f8d4ef7a96b00025108c0ba72415ffe66551a234962d4b7e1d4a6fd1ef80406c" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-csp-version" content="485d6a5ccbb1eeae9c86b616b4870b531f6f458e8bd5c309c40280dc4f51defb" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-css-version" content="788e091fa00f609a418a9b2a6a6bd3260fb618b6bb26c27eda14e8bba26659b9" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-js-version" content="fe228990bb82127269d2390be73d4d4360222842e395ba6b2bdcb23f372ebb73" data-turbo-track="reload">
+
+  <meta name="turbo-cache-control" content="no-preview">
+
+    
+  <meta name="go-import" content="github.com/SpacehuhnTech/esp8266_deauther git https://github.com/SpacehuhnTech/esp8266_deauther.git">
+
+  <meta name="octolytics-dimension-user_id" content="64325017"><meta name="octolytics-dimension-user_login" content="SpacehuhnTech"><meta name="octolytics-dimension-repository_id" content="78281075"><meta name="octolytics-dimension-repository_nwo" content="SpacehuhnTech/esp8266_deauther"><meta name="octolytics-dimension-repository_public" content="true"><meta name="octolytics-dimension-repository_is_fork" content="false"><meta name="octolytics-dimension-repository_network_root_id" content="78281075"><meta name="octolytics-dimension-repository_network_root_nwo" content="SpacehuhnTech/esp8266_deauther">
+
+
+
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <meta name="browser-optimizely-client-errors-url" content="https://api.github.com/_private/browser/optimizely_client/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+
+<meta name="theme-color" content="#1e2327">
+<meta name="color-scheme" content="light dark">
+
+
+  <link rel="manifest" href="https://github.com/manifest.json" crossorigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production page-responsive" style="word-wrap: break-word;">
+    
+
+    <div class="position-relative js-header-wrapper ">
+      <a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#start-of-content" class="px-2 py-4 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content">Skip to content</a>
+      <span data-view-component="true" class="progress-pjax-loader js-pjax-loader-bar Progress position-fixed width-full">
+    <span style="width: 0%;" data-view-component="true" class="Progress-item progress-pjax-loader-bar left-0 top-0 color-bg-accent-emphasis"></span>
+</span>      
+      
+
+
+        
+
+            <script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-MhOemEKiSOVWizTVrpem+Z51oBadZ8iYRczwGZZ3xMfmX0kXh5RWzXbfwhJqlk7h7OXASj8PwwWLsx7D9tExAA==" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/sessions-32139e9842a2.js.download"></script>
+<header class="Header-old header-logged-out js-details-container Details position-relative f4 py-2" role="banner">
+  <div class="container-xl d-lg-flex flex-items-center p-responsive">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="mr-4 color-fg-inherit" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github">
+    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+      </a>
+
+        <div class="d-lg-none css-truncate css-truncate-target width-fit p-2">
+          
+
+        </div>
+
+      <div class="d-flex flex-items-center">
+            <a href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fwiki%2Fshow&amp;source=header-repo" class="d-inline-block d-lg-none f5 no-underline border color-border-default rounded-2 px-2 py-1 mr-3 mr-sm-5 color-fg-inherit" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="4d1706570ce8e5813d4ca08c6f80b15456f5aa19a22d950936609d745b5161eb">
+              Sign&nbsp;up
+            </a>
+
+        <button aria-label="Toggle navigation" aria-expanded="false" type="button" data-view-component="true" class="js-details-target btn-link d-lg-none mt-1 color-fg-inherit">  <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="octicon octicon-three-bars">
+    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+</svg>
+  
+</button>      </div>
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--logged-out position-fixed top-0 right-0 bottom-0 height-fit position-lg-relative d-lg-flex flex-justify-between flex-items-center flex-auto">
+      <div class="d-flex d-lg-none flex-justify-end border-bottom color-bg-subtle p-3">
+        <button aria-label="Toggle navigation" aria-expanded="false" type="button" data-view-component="true" class="js-details-target btn-link">  <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-x color-fg-muted">
+    <path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path>
+</svg>
+  
+</button>      </div>
+
+        <nav class="mt-0 px-3 px-lg-0 mb-5 mb-lg-0" aria-label="Global">
+          <ul class="d-lg-flex list-style-none">
+              <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <details class="HeaderMenu-details details-overlay details-reset width-full">
+      <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+        Product
+        <svg x="0" y="0" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative"><path d="M1,1l6.2,6L13,1"></path></svg>
+      </summary>
+      <div class="dropdown-menu flex-auto rounded px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+        <ul class="list-style-none f5 pb-1">
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--primary text-bold py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Features&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Features;&quot;}" href="https://github.com/features">
+      Features
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Mobile&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Mobile;&quot;}" href="https://github.com/mobile">
+      Mobile
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Actions&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Actions;&quot;}" href="https://github.com/features/actions">
+      Actions
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Codespaces&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Codespaces;&quot;}" href="https://github.com/features/codespaces">
+      Codespaces
+</a>  </li>
+
+            
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Packages&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Packages;&quot;}" href="https://github.com/features/packages">
+      Packages
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Security&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Security;&quot;}" href="https://github.com/features/security">
+      Security
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Code review&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Code review;&quot;}" href="https://github.com/features/code-review">
+      Code review
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Issues&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Issues;&quot;}" href="https://github.com/features/issues">
+      Issues
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Integrations&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Integrations;&quot;}" href="https://github.com/features/integrations">
+      Integrations
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--primary text-bold border-top pt-4 pb-2 mt-3" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to GitHub Sponsors&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:GitHub Sponsors;&quot;}" href="https://github.com/sponsors">
+      GitHub Sponsors
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--primary text-bold py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Customer stories&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Customer stories;&quot;}" href="https://github.com/customer-stories">
+      Customer stories
+</a>  </li>
+
+        </ul>
+      </div>
+    </details>
+</li>
+
+
+              <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-analytics-event="{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to go to Team&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Team;&quot;}" href="https://github.com/team">Team</a>
+</li>
+
+              <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-analytics-event="{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to go to Enterprise&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Enterprise;&quot;}" href="https://github.com/enterprise">Enterprise</a>
+</li>
+
+
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <details class="HeaderMenu-details details-overlay details-reset width-full">
+      <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+        Explore
+        <svg x="0" y="0" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative"><path d="M1,1l6.2,6L13,1"></path></svg>
+      </summary>
+      <div class="dropdown-menu flex-auto rounded px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+        <ul class="list-style-none f5 pb-1">
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--primary text-bold py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Explore GitHub&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Explore GitHub;&quot;}" href="https://github.com/explore">
+      Explore GitHub
+</a>  </li>
+
+              <li class="color-fg-muted text-normal f6 text-mono mb-1 border-top pt-3 mt-3 mb-1">Learn and contribute</li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Topics&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Topics;&quot;}" href="https://github.com/topics">
+      Topics
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Collections&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Collections;&quot;}" href="https://github.com/collections">
+      Collections
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Trending&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Trending;&quot;}" href="https://github.com/trending">
+      Trending
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Skills&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Skills;&quot;}" href="https://skills.github.com/">
+      Skills
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to GitHub Sponsors&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:GitHub Sponsors;&quot;}" href="https://github.com/sponsors/explore">
+      GitHub Sponsors
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Open source guides&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Open source guides;&quot;}" href="https://opensource.guide/">
+      Open source guides
+</a>  </li>
+
+              <li class="color-fg-muted text-normal f6 text-mono mb-1 border-top pt-3 mt-3 mb-1">Connect with others</li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to The ReadME Project&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:The ReadME Project;&quot;}" href="https://github.com/readme">
+      The ReadME Project
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Events&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Events;&quot;}" href="https://github.com/events">
+      Events
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Community forum&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Community forum;&quot;}" href="https://github.community/">
+      Community forum
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to GitHub Education&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:GitHub Education;&quot;}" href="https://education.github.com/">
+      GitHub Education
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to GitHub Stars program&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:GitHub Stars program;&quot;}" href="https://stars.github.com/">
+      GitHub Stars program
+</a>  </li>
+
+        </ul>
+      </div>
+    </details>
+</li>
+
+
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-analytics-event="{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to go to Marketplace&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Marketplace;&quot;}" href="https://github.com/marketplace">Marketplace</a>
+</li>
+
+
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <details class="HeaderMenu-details details-overlay details-reset width-full">
+      <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+        Pricing
+        <svg x="0" y="0" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative"><path d="M1,1l6.2,6L13,1"></path></svg>
+      </summary>
+      <div class="dropdown-menu flex-auto rounded px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+        <ul class="list-style-none f5 pb-1">
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--primary text-bold py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Plans&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Plans;&quot;}" href="https://github.com/pricing">
+      Plans
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Compare plans&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Compare plans;&quot;}" href="https://github.com/pricing#compare-features">
+      Compare plans
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Contact Sales&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Contact Sales;&quot;}" href="https://github.com/enterprise/contact">
+      Contact Sales
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--primary text-bold border-top pt-4 pb-2 mt-3" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Education&quot;,&quot;label&quot;:&quot;ref_page:/spacehuhntech/esp8266_deauther/wiki/Installation;ref_cta:Education;&quot;}" href="https://education.github.com/">
+      Education
+</a>  </li>
+
+        </ul>
+      </div>
+    </details>
+</li>
+
+          </ul>
+        </nav>
+
+      <div class="d-lg-flex flex-items-center px-3 px-lg-0 text-center text-lg-left">
+          <div class="d-lg-flex min-width-0 mb-3 mb-lg-0">
+            
+
+
+
+<div class="header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="78281075" data-scoped-search-url="/SpacehuhnTech/esp8266_deauther/search" data-owner-scoped-search-url="/orgs/SpacehuhnTech/search" data-unscoped-search-url="/search" data-turbo="false" action="https://github.com/SpacehuhnTech/esp8266_deauther/search" accept-charset="UTF-8" method="get">
+      <label class="form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+        <input type="text" class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable" data-hotkey="s,/" name="q" data-test-selector="nav-search-input" placeholder="Search" data-unscoped-placeholder="Search GitHub" data-scoped-placeholder="Search" autocapitalize="off" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-controls="jump-to-results" aria-label="Search" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" spellcheck="false" autocomplete="off">
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="2bzkH53A5qJeEDZ4cAs+Fe8BIXO3aK3iIGXZNebDlRGhAke0RPDZerUacZGQEnX2ZeuNBdowhWpVZukltyd53Q==">
+        <input type="hidden" class="js-site-search-type-field" name="type">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
+
+
+          <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+            
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation" data-item-type="suggestion">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="color-fg-muted">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation" data-item-type="scoped_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-owner-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation" data-item-type="owner_scoped_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this organization">
+        In this organization
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation" data-item-type="global_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+</ul>
+
+          </div>
+      </label>
+</form>  </div>
+</div>
+
+          </div>
+
+        <div class="position-relative mr-3 mb-4 mb-lg-0 d-inline-block">
+          <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fspacehuhntech%2Fesp8266_deauther%2Fwiki%2FInstallation" class="HeaderMenu-link flex-shrink-0 no-underline" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0412ae68b9363027704536326b6a54907211f7f308611c77052258db2a3f4b1e" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
+            Sign in
+          </a>
+        </div>
+
+          <a href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fwiki%2Fshow&amp;source=header-repo&amp;source_repo=SpacehuhnTech%2Fesp8266_deauther" class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-border-default rounded px-2 py-1" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0412ae68b9363027704536326b6a54907211f7f308611c77052258db2a3f4b1e" data-analytics-event="{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/&lt;user-name&gt;/&lt;repo-name&gt;/wiki/show;ref_cta:Sign up;ref_loc:header logged out&quot;}">
+            Sign up
+          </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+
+
+
+
+
+    <div data-pjax-replace="" id="js-flash-container" data-turbo-replace="">
+
+
+  <template class="js-flash-template"></template>
+</div>
+
+
+    
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled="" data-discussion-hovercards-enabled="" data-issue-and-pr-hovercards-enabled="">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main id="js-repo-pjax-container" data-pjax-container="">
+      
+  
+    
+    
+
+
+
+
+
+
+
+
+  <div id="repository-container-header" class="pt-3 hide-full-screen" style="background-color: var(--color-page-header-bg);" data-pjax-replace="" data-turbo-replace="">
+
+      <div class="d-flex mb-3 px-3 px-md-4 px-lg-5">
+
+        <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class=" d-flex flex-wrap flex-items-center wb-break-word f3 text-normal">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo color-fg-muted mr-2">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+  <span class="author flex-self-stretch" itemprop="author">
+    <a class="url fn" rel="author" data-hovercard-type="organization" data-hovercard-url="/orgs/SpacehuhnTech/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/SpacehuhnTech">SpacehuhnTech</a>
+  </span>
+  <span class="mx-1 flex-self-stretch color-fg-muted">/</span>
+  <strong itemprop="name" class="mr-2 flex-self-stretch">
+    <a data-pjax="#repo-content-pjax-container" href="https://github.com/SpacehuhnTech/esp8266_deauther">esp8266_deauther</a>
+  </strong>
+
+  <span></span><span class="Label Label--secondary v-align-middle mr-1">Public</span>
+</div>
+
+        </div>
+
+          <ul class="pagehead-actions flex-shrink-0 d-none d-md-inline" style="padding: 2px 0;">
+      <li>
+        <details id="funding-links-modal-SpacehuhnTech-esp8266_deauther" class="details-reset details-overlay details-overlay-dark d-inline-block float-left">
+  <summary title="Sponsor SpacehuhnTech/esp8266_deauther" data-view-component="true" class="btn-sm btn" role="button">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor mr-1 color-fg-sponsors">
+    <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"></path>
+</svg>
+      Sponsor
+  
+</summary>  <details-dialog class="anim-fade-in fast Box Box--overlay d-flex flex-column" src="/SpacehuhnTech/esp8266_deauther/funding_links?fragment=1" preload="" role="dialog" aria-modal="true">
+    <div class="Box-header">
+      <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog="">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+      </button>
+      <h3 class="Box-title">
+        Sponsor SpacehuhnTech/esp8266_deauther
+      </h3>
+    </div>
+    <div class="overflow-auto">
+      
+<div class="text-left f5">
+  <div class="color-bg-default px-3 pt-3">
+      <div class="mb-3">
+    <div class="d-flex mb-3">
+      <h5 class="flex-auto m-0">GitHub Sponsors</h5>
+      <a href="https://github.com/sponsors">Learn more</a>
+    </div>
+      <div class="mb-3">
+        <div class="Box color-shadow-small col-12 p-3">
+  <div class="d-flex flex-items-center">
+    <a href="https://github.com/SpacehuhnTech">
+      <img src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/64325017" alt="@SpacehuhnTech" size="40" height="40" width="40" data-view-component="true" class="avatar mr-2 flex-shrink-0">
+</a>    <div class="flex-auto">
+      <p class="m-0 h5">
+        <a class="color-fg-default" href="https://github.com/SpacehuhnTech">
+          SpacehuhnTech
+</a>      </p>
+      <p class="m-0 f6">
+        <a class="color-fg-default" href="https://github.com/SpacehuhnTech">
+          SpacehuhnTech
+</a>      </p>
+    </div>
+      <a aria-label="Sponsor @SpacehuhnTech" data-hydro-click="{&quot;event_type&quot;:&quot;sponsors.button_click&quot;,&quot;payload&quot;:{&quot;button&quot;:&quot;REPOSITORY_FUNDING_MODAL_SPONSOR&quot;,&quot;sponsorable_login&quot;:&quot;SpacehuhnTech&quot;,&quot;originating_url&quot;:&quot;https://github.com/SpacehuhnTech/esp8266_deauther/funding_links?fragment=1&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="e56a43729966eb354fbf137c11def7109bd31904e8a762308bfa280e4b91ab49" href="https://github.com/sponsors/SpacehuhnTech" data-view-component="true" class="btn btn-sm">
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor mr-1 v-align-middle color-fg-sponsors anim-pulse-in">
+    <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"></path>
+</svg>
+  <span class="v-align-middle">Sponsor</span>
+</a>
+  </div>
+</div>
+
+      </div>
+  </div>
+  <h5 class="flex-auto mb-3 mt-0">External links</h5>
+      <div class="d-flex mb-3">
+        <div class="circle mr-2 border d-flex flex-justify-center flex-items-center flex-shrink-0" style="width:24px;height:24px;">
+          <img width="16" height="16" class="octicon rounded-2 d-block" alt="ko_fi" src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/ko_fi.svg">
+        </div>
+        <div class="flex-auto min-width-0">
+          <a target="_blank" data-ga-click="Dashboard, click, Nav menu - item:org-profile context:organization" data-hydro-click="{&quot;event_type&quot;:&quot;sponsors.repo_funding_links_link_click&quot;,&quot;payload&quot;:{&quot;platform&quot;:{&quot;platform_type&quot;:&quot;KO_FI&quot;,&quot;platform_url&quot;:&quot;https://ko-fi.com/spacehuhn&quot;},&quot;platforms&quot;:[{&quot;platform_type&quot;:&quot;GITHUB&quot;,&quot;platform_url&quot;:&quot;https://github.com/SpacehuhnTech&quot;},{&quot;platform_type&quot;:&quot;KO_FI&quot;,&quot;platform_url&quot;:&quot;https://ko-fi.com/spacehuhn&quot;}],&quot;repo_id&quot;:78281075,&quot;owner_id&quot;:64325017,&quot;user_id&quot;:null,&quot;originating_url&quot;:&quot;https://github.com/SpacehuhnTech/esp8266_deauther/funding_links?fragment=1&quot;}}" data-hydro-click-hmac="985fd725f9d5e663474ba0070a7304cab8a149ab987ce9a728d34b22a940710e" href="https://ko-fi.com/spacehuhn"><span>ko-fi.com/<strong>spacehuhn</strong></span></a>
+        </div>
+      </div>
+
+  </div>
+  <div class="text-small p-3 border-top">
+    <p class="my-0">
+      <a href="https://docs.github.com/articles/displaying-a-sponsor-button-in-your-repository">Learn more about funding links in repositories</a>.
+    </p>
+      <p class="my-0">
+        <a class="Link--secondary" href="https://github.com/contact/report-abuse?report=SpacehuhnTech%2Fesp8266_deauther+%28Repository+Funding+Links%29">Report abuse</a>
+      </p>
+  </div>
+</div>
+
+    </div>
+  </details-dialog>
+</details>
+
+      </li>
+
+    
+
+  <li>
+      <a href="https://github.com/login?return_to=%2FSpacehuhnTech%2Fesp8266_deauther" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="d986c7989e645bbd96a31de30c86e4eb48d500c6e2457291a8c78cf727b1d0c6" aria-label="You must be signed in to change notification settings" data-view-component="true" class="tooltipped tooltipped-s btn-sm btn">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-bell mr-2">
+    <path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path>
+</svg>Notifications
+  
+</a>
+  </li>
+
+  <li>
+        <a href="https://github.com/login?return_to=%2FSpacehuhnTech%2Fesp8266_deauther" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:78281075,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="fa162b81ca7f601d125465c98b57694c003b1a99591faefa2968a2a3c8203eda" aria-label="You must be signed in to fork a repository" data-view-component="true" class="tooltipped tooltipped-s btn-sm btn">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2">
+    <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path>
+</svg>Fork
+    <span id="repo-network-counter" data-pjax-replace="true" title="2,149" data-view-component="true" class="Counter">2.1k</span>
+  
+</a>
+  </li>
+
+  <li>
+        <div data-view-component="true" class="BtnGroup d-flex">
+      <a href="https://github.com/login?return_to=%2FSpacehuhnTech%2Fesp8266_deauther" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:78281075,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="07cca0e099363267296f7e56c65f5b7684a553198411b69df6df62ba33092055" aria-label="You must be signed in to star a repository" data-view-component="true" class="tooltipped tooltipped-s btn-sm btn BtnGroup-item">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star v-align-text-bottom d-inline-block mr-2">
+    <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
+</svg><span data-view-component="true" class="d-inline">
+          Star
+</span>          <span id="repo-stars-counter-star" aria-label="10081 users starred this repository" data-singular-suffix="user starred this repository" data-plural-suffix="users starred this repository" data-pjax-replace="true" data-turbo-replace="true" title="10,081" data-view-component="true" class="Counter js-social-count">10.1k</span>
+  
+</a>      <button disabled="disabled" aria-label="You must be signed in to add this repository to a list" type="button" data-view-component="true" class="btn-sm btn BtnGroup-item px-2">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+  
+</button></div>
+  </li>
+
+  
+
+</ul>
+
+      </div>
+
+      <div id="responsive-meta-container" data-pjax-replace="" data-turbo-replace="">
+</div>
+
+
+        
+<nav data-pjax="#js-repo-pjax-container" aria-label="Repository" data-view-component="true" class="js-repo-nav js-sidenav-container-pjax js-responsive-underlinenav overflow-hidden UnderlineNav px-3 px-md-4 px-lg-5">
+
+  <ul data-view-component="true" class="UnderlineNav-body list-style-none">
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="code-tab" href="https://github.com/SpacehuhnTech/esp8266_deauther" data-tab-item="i0code-tab" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments /SpacehuhnTech/esp8266_deauther" data-pjax="#repo-content-pjax-container" data-hotkey="g c" data-ga-click="Repository, Navigation click, Code tab" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code UnderlineNav-octicon d-none d-sm-inline">
+    <path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path>
+</svg>
+          <span data-content="Code">Code</span>
+            <span id="code-repo-tab-count" data-pjax-replace="" title="Not available" data-view-component="true" class="Counter"></span>
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="issues-tab" href="https://github.com/SpacehuhnTech/esp8266_deauther/issues" data-tab-item="i1issues-tab" data-selected-links="repo_issues repo_labels repo_milestones /SpacehuhnTech/esp8266_deauther/issues" data-pjax="#repo-content-pjax-container" data-hotkey="g i" data-ga-click="Repository, Navigation click, Issues tab" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
+    <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path><path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path>
+</svg>
+          <span data-content="Issues">Issues</span>
+            <span id="issues-repo-tab-count" data-pjax-replace="" title="92" data-view-component="true" class="Counter">92</span>
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="pull-requests-tab" href="https://github.com/SpacehuhnTech/esp8266_deauther/pulls" data-tab-item="i2pull-requests-tab" data-selected-links="repo_pulls checks /SpacehuhnTech/esp8266_deauther/pulls" data-pjax="#repo-content-pjax-container" data-hotkey="g p" data-ga-click="Repository, Navigation click, Pull requests tab" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-pull-request UnderlineNav-octicon d-none d-sm-inline">
+    <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"></path>
+</svg>
+          <span data-content="Pull requests">Pull requests</span>
+            <span id="pull-requests-repo-tab-count" data-pjax-replace="" title="2" data-view-component="true" class="Counter">2</span>
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="actions-tab" href="https://github.com/SpacehuhnTech/esp8266_deauther/actions" data-tab-item="i3actions-tab" data-selected-links="repo_actions /SpacehuhnTech/esp8266_deauther/actions" data-pjax="#repo-content-pjax-container" data-hotkey="g a" data-analytics-event="{&quot;category&quot;:&quot;Actions&quot;,&quot;action&quot;:&quot;clicked&quot;,&quot;label&quot;:&quot;ref_cta:Actions;ref_loc:navigation_helper&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline">
+    <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"></path>
+</svg>
+          <span data-content="Actions">Actions</span>
+            <span id="actions-repo-tab-count" data-pjax-replace="" title="Not available" data-view-component="true" class="Counter"></span>
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="wiki-tab" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki" data-tab-item="i4wiki-tab" data-selected-links="repo_wiki /SpacehuhnTech/esp8266_deauther/wiki" data-pjax="#repo-content-pjax-container" data-hotkey="g w" data-ga-click="Repository, Navigation click, Wikis tab" aria-current="page" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item selected">
+    
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book UnderlineNav-octicon d-none d-sm-inline">
+    <path fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"></path>
+</svg>
+          <span data-content="Wiki">Wiki</span>
+            <span id="wiki-repo-tab-count" data-pjax-replace="" title="Not available" data-view-component="true" class="Counter"></span>
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="security-tab" href="https://github.com/SpacehuhnTech/esp8266_deauther/security" data-tab-item="i5security-tab" data-selected-links="security overview alerts policy token_scanning code_scanning /SpacehuhnTech/esp8266_deauther/security" data-pjax="#repo-content-pjax-container" data-hotkey="g s" data-ga-click="Repository, Navigation click, Security tab" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-shield UnderlineNav-octicon d-none d-sm-inline">
+    <path fill-rule="evenodd" d="M7.467.133a1.75 1.75 0 011.066 0l5.25 1.68A1.75 1.75 0 0115 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.7 1.7 0 01-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 011.217-1.667l5.25-1.68zm.61 1.429a.25.25 0 00-.153 0l-5.25 1.68a.25.25 0 00-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.2.2 0 00.154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.25.25 0 00-.174-.237l-5.25-1.68zM9 10.5a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.75a.75.75 0 10-1.5 0v3a.75.75 0 001.5 0v-3z"></path>
+</svg>
+          <span data-content="Security">Security</span>
+            
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="insights-tab" href="https://github.com/SpacehuhnTech/esp8266_deauther/pulse" data-tab-item="i6insights-tab" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /SpacehuhnTech/esp8266_deauther/pulse" data-pjax="#repo-content-pjax-container" data-ga-click="Repository, Navigation click, Insights tab" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline">
+    <path fill-rule="evenodd" d="M1.5 1.75a.75.75 0 00-1.5 0v12.5c0 .414.336.75.75.75h14.5a.75.75 0 000-1.5H1.5V1.75zm14.28 2.53a.75.75 0 00-1.06-1.06L10 7.94 7.53 5.47a.75.75 0 00-1.06 0L3.22 8.72a.75.75 0 001.06 1.06L7 7.06l2.47 2.47a.75.75 0 001.06 0l5.25-5.25z"></path>
+</svg>
+          <span data-content="Insights">Insights</span>
+            <span id="insights-repo-tab-count" data-pjax-replace="" title="Not available" data-view-component="true" class="Counter"></span>
+
+
+    
+</a></li>
+</ul>
+    <div style="visibility:hidden;" data-view-component="true" class="UnderlineNav-actions js-responsive-underlinenav-overflow position-absolute pr-3 pr-md-4 pr-lg-5 right-0">      <details data-view-component="true" class="details-overlay details-reset position-relative">
+  <summary role="button" data-view-component="true">          <div class="UnderlineNav-item mr-0 border-0">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal">
+    <path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+            <span class="sr-only">More</span>
+          </div>
+</summary>
+  <div data-view-component="true">          <details-menu role="menu" data-view-component="true" class="dropdown-menu dropdown-menu-sw">
+  
+            <ul>
+                <li data-menu-item="i0code-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments /SpacehuhnTech/esp8266_deauther" href="https://github.com/SpacehuhnTech/esp8266_deauther">
+                    Code
+</a>                </li>
+                <li data-menu-item="i1issues-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links="repo_issues repo_labels repo_milestones /SpacehuhnTech/esp8266_deauther/issues" href="https://github.com/SpacehuhnTech/esp8266_deauther/issues">
+                    Issues
+</a>                </li>
+                <li data-menu-item="i2pull-requests-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links="repo_pulls checks /SpacehuhnTech/esp8266_deauther/pulls" href="https://github.com/SpacehuhnTech/esp8266_deauther/pulls">
+                    Pull requests
+</a>                </li>
+                <li data-menu-item="i3actions-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links="repo_actions /SpacehuhnTech/esp8266_deauther/actions" href="https://github.com/SpacehuhnTech/esp8266_deauther/actions">
+                    Actions
+</a>                </li>
+                <li data-menu-item="i4wiki-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item selected dropdown-item" aria-current="page" data-selected-links="repo_wiki /SpacehuhnTech/esp8266_deauther/wiki" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki">
+                    Wiki
+</a>                </li>
+                <li data-menu-item="i5security-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links="security overview alerts policy token_scanning code_scanning /SpacehuhnTech/esp8266_deauther/security" href="https://github.com/SpacehuhnTech/esp8266_deauther/security">
+                    Security
+</a>                </li>
+                <li data-menu-item="i6insights-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /SpacehuhnTech/esp8266_deauther/pulse" href="https://github.com/SpacehuhnTech/esp8266_deauther/pulse">
+                    Insights
+</a>                </li>
+            </ul>
+
+</details-menu></div>
+</details></div>
+</nav>
+  </div>
+
+
+
+<div id="repo-content-pjax-container" class="repository-content ">
+  
+  
+
+
+  
+      
+  <div class="clearfix container-xl px-3 px-md-4 px-lg-5 mt-4 page" id="wiki-wrapper">
+    <div class="d-flex flex-column flex-md-row gh-header">
+      <h1 class="flex-auto min-width-0 mb-2 mb-md-0 mr-0 mr-md-2 gh-header-title">Installation</h1>
+
+        <div class="mt-0 mt-lg-1 flex-shrink-0 gh-header-actions">
+          <a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#wiki-pages-box" class="d-md-none ">Jump to bottom</a>
+
+        </div>
+    </div>
+
+      <div class="mt-2 mt-md-1 pb-3 gh-header-meta">
+        Stefan Kremser edited this page <relative-time datetime="2021-03-08T20:13:08Z" class="no-wrap" title="Mar 9, 2021, 1:43 AM GMT+5:30">on Mar 9, 2021</relative-time>
+        ·
+        <a href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Installation/_history" class="Link--muted">
+          25 revisions
+        </a>
+      </div>
+
+    <div id="wiki-content" class="mt-4">
+      <div data-view-component="true" class="Layout Layout--flowRow-until-md Layout--sidebarPosition-end Layout--sidebarPosition-flowRow-end">
+  
+  <div data-view-component="true" class="Layout-sidebar">          <div class="wiki-rightbar">
+            <div id="wiki-pages-box" class="mb-4 wiki-pages-box js-wiki-pages-box" role="navigation">
+              
+<div class="Box Box--condensed color-shadow-small">
+  <div class="Box-header js-wiki-toggle-collapse" style="cursor: pointer">
+    <h3 class="Box-title">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toggle-display d-none">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-right js-wiki-sidebar-toggle-display">
+    <path d="M6.427 4.427l3.396 3.396a.25.25 0 010 .354l-3.396 3.396A.25.25 0 016 11.396V4.604a.25.25 0 01.427-.177z"></path>
+</svg>
+      Pages <span title="11" data-view-component="true" class="Counter Counter--primary">11</span>
+    </h3>
+  </div>
+  <div class="d-none js-wiki-sidebar-toggle-display">
+    <div class="filter-bar">
+      <input type="text" id="wiki-pages-filter" class="form-control input-sm input-block js-filterable-field" placeholder="Find a Page…" aria-label="Find a Page…" autocomplete="off">
+    </div>
+
+    <ul class="m-0 p-0 list-style-none" data-filterable-for="wiki-pages-filter" data-filterable-type="substring" data-pjax="">
+        <li class="Box-row px-2 py-2">
+          <details class="details-reset">
+  <summary>
+    <div class="d-flex flex-items-start">
+      <div class="p-2 mt-n1 mb-n1 ml-n1 btn btn-octicon js-wiki-sidebar-toc-toggle-chevron-button ">
+        <svg hidden="hidden" style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="js-wiki-sidebar-toc-spinner mr-0 v-align-text-bottom anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toc-toggle-chevron  mr-0">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      </div>
+      <a class="flex-1 py-1 text-bold" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki">Home</a>
+    </div>
+  </summary>
+
+    <include-fragment class="js-wiki-sidebar-toc-fragment" loading="lazy" src="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Home/_toc">
+    </include-fragment>
+</details>
+
+        </li>
+        <li class="Box-row px-2 py-2">
+          <details class="details-reset">
+  <summary>
+    <div class="d-flex flex-items-start">
+      <div class="p-2 mt-n1 mb-n1 ml-n1 btn btn-octicon js-wiki-sidebar-toc-toggle-chevron-button ">
+        <svg hidden="hidden" style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="js-wiki-sidebar-toc-spinner mr-0 v-align-text-bottom anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toc-toggle-chevron  mr-0">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      </div>
+      <a class="flex-1 py-1 text-bold" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Display">Display</a>
+    </div>
+  </summary>
+
+    <include-fragment class="js-wiki-sidebar-toc-fragment" loading="lazy" src="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Display/_toc">
+    </include-fragment>
+</details>
+
+        </li>
+        <li class="Box-row px-2 py-2">
+          <details class="details-reset">
+  <summary>
+    <div class="d-flex flex-items-start">
+      <div class="p-2 mt-n1 mb-n1 ml-n1 btn btn-octicon js-wiki-sidebar-toc-toggle-chevron-button ">
+        <svg hidden="hidden" style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="js-wiki-sidebar-toc-spinner mr-0 v-align-text-bottom anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toc-toggle-chevron  mr-0">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      </div>
+      <a class="flex-1 py-1 text-bold" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/FAQ">FAQ</a>
+    </div>
+  </summary>
+
+    <include-fragment class="js-wiki-sidebar-toc-fragment" loading="lazy" src="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/FAQ/_toc">
+    </include-fragment>
+</details>
+
+        </li>
+        <li class="Box-row px-2 py-2">
+          <details class="details-reset">
+  <summary>
+    <div class="d-flex flex-items-start">
+      <div class="p-2 mt-n1 mb-n1 ml-n1 btn btn-octicon js-wiki-sidebar-toc-toggle-chevron-button ">
+        <svg hidden="hidden" style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="js-wiki-sidebar-toc-spinner mr-0 v-align-text-bottom anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toc-toggle-chevron  mr-0">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      </div>
+      <a class="flex-1 py-1 text-bold" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Installation">Installation</a>
+    </div>
+  </summary>
+
+    <include-fragment class="js-wiki-sidebar-toc-fragment" loading="lazy" src="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Installation/_toc">
+    </include-fragment>
+</details>
+
+        </li>
+        <li class="Box-row px-2 py-2">
+          <details class="details-reset">
+  <summary>
+    <div class="d-flex flex-items-start">
+      <div class="p-2 mt-n1 mb-n1 ml-n1 btn btn-octicon js-wiki-sidebar-toc-toggle-chevron-button ">
+        <svg hidden="hidden" style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="js-wiki-sidebar-toc-spinner mr-0 v-align-text-bottom anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toc-toggle-chevron  mr-0">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      </div>
+      <a class="flex-1 py-1 text-bold" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Projects">Projects</a>
+    </div>
+  </summary>
+
+    <include-fragment class="js-wiki-sidebar-toc-fragment" loading="lazy" src="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Projects/_toc">
+    </include-fragment>
+</details>
+
+        </li>
+        <li class="Box-row px-2 py-2">
+          <details class="details-reset">
+  <summary>
+    <div class="d-flex flex-items-start">
+      <div class="p-2 mt-n1 mb-n1 ml-n1 btn btn-octicon js-wiki-sidebar-toc-toggle-chevron-button ">
+        <svg hidden="hidden" style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="js-wiki-sidebar-toc-spinner mr-0 v-align-text-bottom anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toc-toggle-chevron  mr-0">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      </div>
+      <a class="flex-1 py-1 text-bold" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Serial">Serial</a>
+    </div>
+  </summary>
+
+    <include-fragment class="js-wiki-sidebar-toc-fragment" loading="lazy" src="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Serial/_toc">
+    </include-fragment>
+</details>
+
+        </li>
+        <li class="Box-row px-2 py-2">
+          <details class="details-reset">
+  <summary>
+    <div class="d-flex flex-items-start">
+      <div class="p-2 mt-n1 mb-n1 ml-n1 btn btn-octicon js-wiki-sidebar-toc-toggle-chevron-button ">
+        <svg hidden="hidden" style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="js-wiki-sidebar-toc-spinner mr-0 v-align-text-bottom anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toc-toggle-chevron  mr-0">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      </div>
+      <a class="flex-1 py-1 text-bold" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Setup-Display-&amp;-Buttons">Setup Display &amp; Buttons</a>
+    </div>
+  </summary>
+
+    <include-fragment class="js-wiki-sidebar-toc-fragment" loading="lazy" src="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Setup-Display-&amp;-Buttons/_toc">
+    </include-fragment>
+</details>
+
+        </li>
+        <li class="Box-row px-2 py-2">
+          <details class="details-reset">
+  <summary>
+    <div class="d-flex flex-items-start">
+      <div class="p-2 mt-n1 mb-n1 ml-n1 btn btn-octicon js-wiki-sidebar-toc-toggle-chevron-button ">
+        <svg hidden="hidden" style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="js-wiki-sidebar-toc-spinner mr-0 v-align-text-bottom anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toc-toggle-chevron  mr-0">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      </div>
+      <a class="flex-1 py-1 text-bold" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Supported-Devices">Supported Devices</a>
+    </div>
+  </summary>
+
+    <include-fragment class="js-wiki-sidebar-toc-fragment" loading="lazy" src="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Supported-Devices/_toc">
+    </include-fragment>
+</details>
+
+        </li>
+        <li class="Box-row px-2 py-2">
+          <details class="details-reset">
+  <summary>
+    <div class="d-flex flex-items-start">
+      <div class="p-2 mt-n1 mb-n1 ml-n1 btn btn-octicon js-wiki-sidebar-toc-toggle-chevron-button ">
+        <svg hidden="hidden" style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="js-wiki-sidebar-toc-spinner mr-0 v-align-text-bottom anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toc-toggle-chevron  mr-0">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      </div>
+      <a class="flex-1 py-1 text-bold" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Usage">Usage</a>
+    </div>
+  </summary>
+
+    <include-fragment class="js-wiki-sidebar-toc-fragment" loading="lazy" src="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Usage/_toc">
+    </include-fragment>
+</details>
+
+        </li>
+        <li class="Box-row px-2 py-2">
+          <details class="details-reset">
+  <summary>
+    <div class="d-flex flex-items-start">
+      <div class="p-2 mt-n1 mb-n1 ml-n1 btn btn-octicon js-wiki-sidebar-toc-toggle-chevron-button ">
+        <svg hidden="hidden" style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="js-wiki-sidebar-toc-spinner mr-0 v-align-text-bottom anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toc-toggle-chevron  mr-0">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      </div>
+      <a class="flex-1 py-1 text-bold" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Web">Web</a>
+    </div>
+  </summary>
+
+    <include-fragment class="js-wiki-sidebar-toc-fragment" loading="lazy" src="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Web/_toc">
+    </include-fragment>
+</details>
+
+        </li>
+        <li class="Box-row px-2 py-2">
+          <details class="details-reset">
+  <summary>
+    <div class="d-flex flex-items-start">
+      <div class="p-2 mt-n1 mb-n1 ml-n1 btn btn-octicon js-wiki-sidebar-toc-toggle-chevron-button ">
+        <svg hidden="hidden" style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="js-wiki-sidebar-toc-spinner mr-0 v-align-text-bottom anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down js-wiki-sidebar-toc-toggle-chevron  mr-0">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+      </div>
+      <a class="flex-1 py-1 text-bold" href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Writing-Scripts">Writing Scripts</a>
+    </div>
+  </summary>
+
+    <include-fragment class="js-wiki-sidebar-toc-fragment" loading="lazy" src="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Writing-Scripts/_toc">
+    </include-fragment>
+</details>
+
+        </li>
+    </ul>
+  </div>
+</div>
+
+            </div>
+
+              <div class="gollum-markdown-content">
+                <div class="Box Box--condensed mb-4">
+                  <div class="Box-body wiki-custom-sidebar markdown-body">
+                    <h3>
+<a id="user-content-0-home" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#0-home" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>0. <a href="https://github.com/spacehuhn/esp8266_deauther/wiki">Home</a>
+</h3>
+<h3>
+<a id="user-content-1-supported-devices" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#1-supported-devices" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>1. <a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Supported-Devices">Supported Devices</a>
+</h3>
+<ul>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Supported-Devices#dstike-boards">DSTIKE Boards</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Supported-Devices#list-of-supplies">List of supplies</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Supported-Devices#nodemcu">NodeMCU</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Supported-Devices#wemos-d1-mini">Wemos D1 mini</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Supported-Devices#adafruit-huzzah-esp8266">Adafruit HUZZAH ESP8266</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Supported-Devices#warning---fake-boards">WARNING - Fake Boards!</a></li>
+</ul>
+<h3>
+<a id="user-content-2-installation" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#2-installation" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>2. <a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Installation">Installation</a>
+</h3>
+<ul>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Installation#flashing-the-firmware-bin-file">Flashing the firmware .bin file</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Installation#compiling-using-arduino-ide">Compiling using Arduino IDE</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Installation#installation-tips-and-tricks">Installation Tips and Tricks</a></li>
+</ul>
+<h3>
+<a id="user-content-3-setup-display--buttons" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#3-setup-display--buttons" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>3. <a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Setup-Display-&amp;-Buttons">Setup Display &amp; Buttons</a>
+</h3>
+<ul>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Setup-Display-&amp;-Buttons#before-you-continue">Before you continue</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Setup-Display-&amp;-Buttons#what-you-need">What you need</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Setup-Display-&amp;-Buttons#wire-everything-up">Wire everything up</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Setup-Display-&amp;-Buttons#adjust-code">Adjust code</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Setup-Display-&amp;-Buttons#testing-everything">Testing everything</a></li>
+</ul>
+<h3>
+<a id="user-content-4-usage" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#4-usage" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>4. <a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Usage">Usage</a>
+</h3>
+<ul>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Web">Web</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Display">Display</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Serial">Serial</a></li>
+</ul>
+<h3>
+<a id="user-content-5-faq" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#5-faq" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>5. <a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ">FAQ</a>
+</h3>
+<ul>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#how-to-ask-a-question">How to ask a question</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#timeout-error">Timeout Error</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#compiler-error-irom0text-will-not-fit-in-region">Compiler error .irom0.text will not fit in region</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#how-to-do-a-reset">How to Reset / I forgot the password</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#5ghz-support">5GHz Support</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#esp32-and-esp8285-support">ESP32 and ESP8285 Support</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#difference-between-jammer-and-deauther">Difference between Jammer and Deauther</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#why-is-there-no-packet-monitordeauth-detector-in-the-web-interface">Why is there no Packet-Monitor/Deauth-Detector in the web interface?</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#how-to-compile-bin-files-yourself">How to compile .bin files yourself</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#drivers">Drivers</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#fix-crashes">Fix crashed</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#not-able-to-connect-to-access-point">Not able to connect to Access Point</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#removing-deauther">Removing Deauther</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#espcom-error">espcom error</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#language-doesnt-change">Language doesn't change</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#error-writingsavingreading-file">Error writing/saving/reading file</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#ap-request--not-found">[AP] request: ... NOT FOUND</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/FAQ#attack-stops-after-a-while">Attack stops after a while</a></li>
+</ul>
+<h3>
+<a id="user-content-6-projects" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#6-projects" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>6. <a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Projects">Projects</a>
+</h3>
+<ul>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Projects#deauthing-sandals">Deauthing Sandals</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Projects#drone-hacking-a-fake-makerspace">Drone Hacking a FAKE Makerspace</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Projects#deauther-magnet-box-for-fridge">Deauther Magnet Box for Fridge</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Projects#deauth-detector-with-10w-rgb">Deauth Detector with 10W RGB</a></li>
+<li><a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Projects#pwned-the-pwner">Pwned the pwner</a></li>
+</ul>
+<h3>
+<a id="user-content-7-writing-scripts" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#7-writing-scripts" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>7. <a href="https://github.com/spacehuhn/esp8266_deauther/wiki/Writing-Scripts">Writing Scripts</a>
+</h3>
+<h3>
+<a id="user-content-8-settings" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#8-settings" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>8. <a href="https://github.com/SpacehuhnTech/esp8266_deauther/blob/v2/settings.md">Settings</a>
+</h3>
+<h3>
+<a id="user-content-9-serial-commands" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#9-serial-commands" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>9. <a href="https://github.com/SpacehuhnTech/esp8266_deauther/blob/v2/serialcommands.md">Serial Commands</a>
+</h3>
+
+                  </div>
+                </div>
+              </div>
+
+            <h5 class="mt-0 mb-2">Clone this wiki locally</h5>
+            <div class="width-full input-group">
+              <input id="wiki-clone-url" type="text" data-autoselect="" class="form-control input-sm text-small color-fg-muted input-monospace" aria-label="Clone URL for this wiki" value="https://github.com/SpacehuhnTech/esp8266_deauther.wiki.git" readonly="">
+              <span class="input-group-button">
+                <clipboard-copy for="wiki-clone-url" aria-label="Copy to clipboard" data-view-component="true" class="btn btn-sm zeroclipboard-button" tabindex="0" role="button">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+    <svg style="display: none;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check color-fg-success">
+    <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+</clipboard-copy>
+              </span>
+            </div>
+          </div>
+</div>
+  <div data-view-component="true" class="Layout-main">          <div id="wiki-body" class="gollum-markdown-content">
+              <div class="markdown-body">
+                <h1>
+<a id="user-content-installation" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#installation" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Installation</h1>
+<ul>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#tutorials">Tutorials</a></li>
+<li>
+<a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flashing-the-firmware-bin-file">Flashing bin file</a>
+<ul>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#esptool">Esptool</a></li>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flash-download-tools">Flash Download Tools</a></li>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#esptool-gui">Esptool-gui</a></li>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#nodemcu-flasher">NodeMCU-flasher</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#compiling-using-arduino-ide">Compiling using Arduino IDE</a></li>
+<li>
+<a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#installation-tips-and-tricks">Installation tips and tricks</a>
+<ul>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flash-Button-and-espcomm_open-error">Flash Button / espcomm_open error</a></li>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#drivers-and-com-port">Drivers and COM Port</a></li>
+<li>
+<a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#upload-settings">Upload Settings</a>
+<ul>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flash-mode">Flash Mode</a></li>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flash-frequency">Flash Frequency</a></li>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#cpu-frequency">CPU Frequency</a></li>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#reset-method">Reset Method</a></li>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#baud-rate">Baud Rate</a></li>
+<li><a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flash-size">Flash Size</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+<a id="user-content-tutorials" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#tutorials" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Tutorials</h2>
+<p><strong>Online interactive step by step tutorial by <a href="http://github.com/jLynx">@jLynx</a></strong>:<br>
+🎓 <a href="http://deauth.me/" rel="nofollow">http://deauth.me</a></p>
+<p><strong>$3 WiFi Jammer/Deauther using ESP8266 | Deauther 2.0 Flashing/Installation  by <a href="https://github.com/PwnKitteh">@PwnKitteh</a></strong>:<br>
+🎬 <a href="https://youtu.be/wKhSlIYQ5jA" rel="nofollow">https://youtu.be/wKhSlIYQ5jA</a></p>
+<h2>
+<a id="user-content-flashing-the-firmware-bin-file" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flashing-the-firmware-bin-file" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Flashing the firmware bin file</h2>
+<p>You can find precompiled .bin files on the <a href="https://github.com/spacehuhn/esp8266_deauther/releases">release page</a>. Be sure to download the latest version. The 1 MB file should be good for most devices. If you have a NodeMCU with an ESP-12 you can also use the 4MB file. But all in all, it shouldn't matter that much.<br>
+Use <strong>one</strong> of the following software to flash your ESP8266 with the .bin file.<br>
+If you're beginner, have a look at <a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#node2deauther">Node2Deauther</a>.</p>
+<h3>
+<a id="user-content-esptool" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#esptool" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Esptool</h3>
+<p>Using the NodeMCU (or any similar development board), the flash location is 0x0000 and the mode is dout.<br>
+<code>esptool.py -p /dev/ttyUSB0 write_flash -fm dout 0x0000 esp8266_deauther.ino.nodemcu.bin</code><br>
+Where <code>/dev/ttyUSB0</code> is the COM port of your device, <code>write_flash</code> is telling the program to write to flash memory, <code>-fm dout</code> is the flash mode and <code>esp8266_deather.ino.nodemcu.bin</code> is the name of your .bin file.</p>
+<h3>
+<a id="user-content-flash-download-tools" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flash-download-tools" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Flash Download Tools</h3>
+<p>Espressif has an official GUI tool for Windows.<br>
+It has a lot of options and can be used for the ESP8266, ESP8285 and ESP32.<br>
+You can find it on Espressif's download page here: <a href="https://www.espressif.com/en/support/download/other-tools" rel="nofollow">https://www.espressif.com/en/support/download/other-tools</a><br>
+(if the link changed, just search for <code>esp flash download tool</code>)</p>
+<h3>
+<a id="user-content-node2deauther" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#node2deauther" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Node2Deauther</h3>
+<p><img src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/n2d-main.png" alt="Node2Deauther Screenshot"><br>
+<a href="https://github.com/realmrvodka/">realmrvodka</a> created this user friendly all-in-one flasher tool.<br>
+It helps you go through the process step by step and also provides the drivers you'll need.<br>
+<a href="https://github.com/realmrvodka/n2d/">https://github.com/realmrvodka/n2d/</a></p>
+<h3>
+<a id="user-content-esptool-gui" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#esptool-gui" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Esptool-gui</h3>
+<p>An easy to use GUI flasher for Windows and Mac: <a href="https://github.com/Rodmg/esptool-gui">esptool-gui</a>.<br>
+Select the COM Port and the .bin file (firmware), then just press upload.</p>
+<h3>
+<a id="user-content-nodemcu-flasher" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#nodemcu-flasher" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>NodeMCU-flasher</h3>
+<p>Another easy to use GUI flasher, but this time only for Windows: <a href="https://github.com/nodemcu/nodemcu-flasher">nodemcu-flasher</a>.<br>
+Select the COM port, go to config and select your .bin file at <em>0x000000</em>.<br>
+Go back to Operation and click Flash.<br>
+<img src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/flash_settings_nodemcu_flasher.jpg" alt="Recommended Flash settings NodeMCU Flasher"></p>
+<p>⚠️ The NodeMCU Flasher is outdated and can be buggy. If it doesn't work, just try flashing it again and see the <a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#installation-tips-and-tricks">Installation tips and tricks</a>.</p>
+<h2>
+<a id="user-content-compiling-using-arduino-ide" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#compiling-using-arduino-ide" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Compiling using Arduino IDE</h2>
+<ol start="0">
+<li>
+<p>First you have to install and open the <a href="https://www.arduino.cc/en/main/software" rel="nofollow">Arduino IDE</a>.</p>
+</li>
+<li>
+<p><a href="https://github.com/SpacehuhnTech/esp8266_deauther/archive/v2.zip">Download</a> the source code for this project.</p>
+</li>
+<li>
+<p>Extract the whole .zip file, navigate to esp8266_deauther and open <code>esp8266_deauther.ino</code> with Arduino.</p>
+</li>
+<li>
+<p>In Arduino go to <code>File</code> &gt; <code>Preferences</code> add this URL to the <code>Additional Boards Manager URLs</code>: <code>https://raw.githubusercontent.com/SpacehuhnTech/arduino/main/package_spacehuhn_index.json</code></p>
+</li>
+<li>
+<p>Go to <code>Tools</code> &gt; <code>Board</code> &gt; <code>Boards Manager</code>, search <code>deauther</code> and install <code>Deauther ESP8266 Boards</code></p>
+</li>
+<li>
+<p>Select your board at <code>Tools</code> &gt; <code>Board</code> and be sure it is at <code>Deauther ESP8266 Boards</code> (and <strong>not</strong> at <code>ESP8266 Modules</code>)!</p>
+</li>
+<li>
+<p>Depending on your board, you might have to select a configuration setting at <code>Tools</code> &gt; <code>Deauther Config</code></p>
+</li>
+<li>
+<p>If you need to reset the settings from a prior installation, make sure to select <code>Tools</code> &gt; <code>Erase Flash</code> &gt; <code>All Flash Contents</code></p>
+</li>
+<li>
+<p>If you like to add a display, LED or buttons, follow the <a href="https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Setup-Display-&amp;-Buttons#setup-display--buttons">Setup Display &amp; Buttons</a> guide.</p>
+</li>
+<li>
+<p>Check your upload settings and press upload!</p>
+</li>
+</ol>
+<h2>
+<a id="user-content-installation-tips-and-tricks" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#installation-tips-and-tricks" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Installation tips and tricks</h2>
+<p>These are some small tips that are beneficial for first time users of this software, and hopefully will make it more accessible and cause less headache when flashing the board.<br>
+We recommend the <a href="https://github.com/espressif/esptool">esptool</a> for flashing .bin files, because it works on all platforms. You can read more about how esptool works on their <a href="https://github.com/espressif/esptool">github page</a>.<br>
+For customized versions, we highly recommend using Arduino IDE and our Deauther SDK (see Compiling using Arduino IDE).</p>
+<h3>
+<a id="user-content-flash-button-and-espcomm_open-error" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flash-button-and-espcomm_open-error" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Flash Button and espcomm_open error</h3>
+<p>💥❗️❓❗️❗️💢 Sometimes everything is right but it won't upload and you may get an error like <code>error: espcomm_open failed</code>.<br>
+What you have to do is hold the flash button down, start uploading and <strong>only release it when you see that it's started uploading</strong>.<br>
+<img src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/nodemcu_flash_buttons.jpg" alt="PICTURE nodemcu flash button"></p>
+<p>Most development boards feature a auto-reset method and sometimes it doesn't work properly and it fails to go into flashing mode automatically. To manully force it into the flashing mode, you have to hold down the button.</p>
+<h3>
+<a id="user-content-drivers-and-com-port" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#drivers-and-com-port" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Drivers and COM Port</h3>
+<p>In order to upload successfully, you must select the correct COM port. You can think of it as the address with that your computer accesses the ESP8266.
+The best way to find the correct port is to open the Arduino IDE and see what ports are listed there. This looks the same for every OS, including Linux. On Windows, COM1 is usually never the correct port.
+On Windows you can also have a look at your device manager, there you can also see if a device is not recognized.</p>
+<p>If none of the COM ports work correctly or you can't find any COM Port, you might need to install the drivers.<br>
+The driver you need depends on the UART (USB to Serial) chip that is used on your development board.<br>
+Those are the drivers of the most used chips:</p>
+<ul>
+<li>💾 <a href="https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers" rel="nofollow">CP2102</a>
+</li>
+<li>💾 <a href="https://sparks.gogo.co.nz/ch340.html" rel="nofollow">CH340</a>
+</li>
+</ul>
+<p><img src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/nodemcu_serial_modules.jpg" alt="PICTURE serial chips"></p>
+<p>If you're not sure which chip your board is using, just try both.</p>
+<p>If this doesn't help, try out different cables (some USB cables are only for charging and don't have data lines) or plug it to a different USB port.</p>
+<h3>
+<a id="user-content-upload-settings" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#upload-settings" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Upload Settings</h3>
+<p>Those are the recommended upload/compile settings for Arduino:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>Board: Generic ESP8266 Module  
+Flash Mode: DOUT
+Flash Frequency: 80 MHZ
+CPU Frequency: 160 MHz
+Flash Size: 1M (256K SPIFFS)
+Reset Method: nodemcu
+Upload Speed: 115200
+Port: &lt;com port of your device&gt;
+</code></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="Board: Generic ESP8266 Module  
+Flash Mode: DOUT
+Flash Frequency: 80 MHZ
+CPU Frequency: 160 MHz
+Flash Size: 1M (256K SPIFFS)
+Reset Method: nodemcu
+Upload Speed: 115200
+Port: &lt;com port of your device&gt;" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+    <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+    <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p>Most NodeMCUs and other development boards have 4MB Flash so you can set the Flash Size to 4M (3M SPIFFS) or select NodeMCU 1.0 as the board.<br>
+A bigger Flash size can give you more memory in the SPIFFS for saving data, scripts or other files. Increasing the SPIFFS can also make it a bit slower, as the ESP8266 has to maintain a bigger file system.<br>
+If you have a board with the ESP-07 (the one with the connector for an external antenna) it probably has only 1MB of flash, so keep the recommended settings above.<br>
+Putting the Upload Speed to 921600 (or other baud rates) gives you a higher upload speed but doesn't always work.</p>
+<h4>
+<a id="user-content-flash-mode" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flash-mode" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Flash Mode</h4>
+<p>DOUT should always work. It means Dual Output.<br>
+QIO (quad I/O) uses 4 instead of 2 pins and will make the flash faster. However, you won't be able to use GPIO 9 and 10 (SD2, SD3)! If you flash it with QIO and use those pins, it will crash without a warning.<br>
+More details on the different modes are descripted here: <a href="https://github.com/espressif/esptool/wiki/SPI-Flash-Modes">https://github.com/espressif/esptool/wiki/SPI-Flash-Modes</a></p>
+<h4>
+<a id="user-content-flash-frequency" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flash-frequency" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Flash Frequency</h4>
+<p>A higher flash frequency should increase the speed, but it doesn't always work with every module.<br>
+Try out what works the best.</p>
+<h4>
+<a id="user-content-cpu-frequency" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#cpu-frequency" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>CPU Frequency</h4>
+<p>We strongly recommend to use 160MHz to get the extra performance out of the chip.</p>
+<h4>
+<a id="user-content-reset-method" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#reset-method" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Reset Method</h4>
+<p>Again, try out what works and use that.</p>
+<h4>
+<a id="user-content-baud-rate" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#baud-rate" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Baud Rate</h4>
+<p>The recommended baud rate for uploading is 115200. You can try higher baud rates for faster uploading or slower ones if 115200 isn't working very reliable.</p>
+<h4>
+<a id="user-content-flash-size" class="anchor" href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation#flash-size" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Flash Size</h4>
+<p>The flash size is an important factor!<br>
+<img src="./Installation · SpacehuhnTech_esp8266_deauther Wiki · GitHub_files/esp_modules.jpg" alt="PICTURE different esp8266 modules"><br>
+The ESP-12 (which is used on most development boards like the NodeMCU) has 4MB of flash memory.<br>
+Other Modules like the ESP-01 and ESP-07 (the one with the antenna connector) come with only 1MB of memory.<br>
+You have to change your upload settings depending on the module you're using.</p>
+<p>For compiling we recommend to use either <code>1M (256K SPIFFS)</code> or <code>4M (3M SPIFFS)</code>.<br>
+It is also very important to note, that you <strong>must give the SPIFFS some memory</strong>. This software will only work with the SPIFFS enabled, otherwise you will see something like <code>Initializing SPIFFS...ERROR</code> on startup.</p>
+
+              </div>
+
+          </div>
+</div>
+</div>    </div>
+  </div>
+
+
+</div>
+
+
+
+    </main>
+  </div>
+
+  </div>
+
+          <footer class="footer width-full container-xl p-responsive" role="contentinfo">
+
+
+  <div class="position-relative d-flex flex-items-center pb-2 f6 color-fg-muted border-top color-border-muted flex-column-reverse flex-lg-row flex-wrap flex-lg-nowrap mt-6 pt-6">
+    <ul class="list-style-none d-flex flex-wrap col-0 col-lg-2 flex-justify-start flex-lg-justify-between mb-2 mb-lg-0">
+      <li class="mt-2 mt-lg-0 d-flex flex-items-center">
+        <a aria-label="Homepage" title="GitHub" class="footer-octicon mr-2" href="https://github.com/">
+          <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
+    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+</a>        <span>
+        © 2022 GitHub, Inc.
+        </span>
+      </li>
+    </ul>
+    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-8 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        <li class="mr-3 mr-lg-0"><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}">Terms</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}">Privacy</a></li>
+        <li class="mr-3 mr-lg-0"><a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="https://github.com/security">Security</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://www.githubstatus.com/" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;}">Status</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to help, text:Docs" href="https://docs.github.com/">Docs</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://support.github.com/?tags=dotcom-footer" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}">Contact GitHub</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Pricing&quot;,&quot;label&quot;:&quot;text:Pricing&quot;}">Pricing</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://docs.github.com/" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:api&quot;}">API</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://services.github.com/" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to training&quot;,&quot;label&quot;:&quot;text:training&quot;}">Training</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.blog/" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:blog&quot;}">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 color-fg-muted"></span>
+  </div>
+</footer>
+
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error" hidden="">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden="">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+    <span class="js-stale-session-flash-signed-in" hidden="">You signed in with another tab or window. <a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden="">You signed out in another tab or window. <a href="https://github.com/spacehuhntech/esp8266_deauther/wiki/Installation">Reload</a> to refresh your session.</span>
+  </div>
+    <template id="site-details-dialog"></template>
+
+    <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box color-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+    <template id="snippet-clipboard-copy-button"></template>
+
+
+
+
+  
+
+
+<div aria-live="polite" class="sr-only"></div></body></html>

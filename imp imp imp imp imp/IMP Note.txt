@@ -1,0 +1,9 @@
+Oled ULTA Show Karega!
+Wifi Connect Hone ke baad Ushme 192.68.4.1 per Setting me jaker Display Check kare Save Kare >>> reboot kare
+Only 3xc Oled Supported (With Transistor Oled) 
+Not Support China Oled (Without Transistor)
+
+
+
+SSID   >   Pwd
+pwned >>> deauther
